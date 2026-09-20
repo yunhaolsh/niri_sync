@@ -1,0 +1,39 @@
+theme = Aura
+font-family = "JetBrains Mono"
+font-family = "JetBrainsMono Nerd Font"
+font-family = "Noto Sans SC"
+font-style = "Bold"
+font-style-bold = "ExtraBold"
+font-style-italic = "Bold Italic"
+font-style-bold-italic = "ExtraBold Italic"
+font-size = 13
+minimum-contrast = 3
+window-inherit-font-size = false
+window-padding-x = 10
+window-padding-y = 10
+shell-integration-features = no-cursor
+cursor-style = block
+cursor-style-blink = true
+window-save-state = never
+term = xterm-256color
+keybind = ctrl+alt+j=goto_split:left
+keybind = ctrl+alt+k=goto_split:right
+keybind = ctrl+alt+h=goto_split:up
+keybind = ctrl+alt+l=goto_split:down
+keybind = ctrl+w=close_surface
+
+# ==============================
+# Ghostty 快速启动 / 下拉终端
+# ==============================
+# 全局快捷键：F12 一键呼出/隐藏（最顺手）
+
+keybind = global:f12=toggle_quick_terminal
+
+# 下拉终端位置（top / bottom / left / right）
+quick-terminal-position = top
+
+# 宽度 100%，高度 50%
+quick-terminal-size = 100%,50%
+
+# 动画速度（0=无动画）
+quick-terminal-animation-duration = 0.15

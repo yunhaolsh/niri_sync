@@ -1,0 +1,11 @@
+install-target.log
+result
+result-*
+.direnv/
+*.bak
+*.backup*
+*.old
+secrets/
+config/ssh/private/
+/dms-home-manager/
+/migrate.sh
