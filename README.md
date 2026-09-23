@@ -69,6 +69,20 @@ git pull --ff-only
 ./scripts/apply-local.sh
 ```
 
+## Migrate local Codex conversations
+
+Codex conversations are local state and are not managed by Home Manager. Close
+Codex completely on both machines, then run this from the source machine:
+
+```bash
+./scripts/migrate-codex-state.sh yunhao@new-machine
+```
+
+The script backs up the target's existing `~/.codex`, preserves target-local
+authentication, copies source sessions and state, merges target rollout files,
+and rebuilds the session index. Do not run it while Codex CLI or Desktop is
+open on either machine.
+
 Do not commit SSH private keys, tokens, browser profiles, application databases,
 or cache directories. Use an age/sops repository or a password manager for
 secrets.
